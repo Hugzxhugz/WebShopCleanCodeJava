@@ -30,7 +30,7 @@ public class SortWaresMenu extends MenuStateFactory {
         optionsList.add("3: Sort by price, descending");
         optionsList.add("4: Sort by price, ascending");
         amountOfOptions = optionsList.size();
-        this.quitCommand = "quit";
+        this.quitCommand = "QuitIsEntered";
         commands.put("1", new SortByNameDescendingCommand());
         commands.put("2", new SortByNameAscendingCommand());
         commands.put("3", new SortByPriceDescendingCommand());

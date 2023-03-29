@@ -24,7 +24,7 @@ public class MainMenuState extends MenuStateFactory {
         this.currentChoice = 1;
         this.commands = new HashMap<>();
         this.optionsList = new ArrayList<>();
-        this.quitCommand = "quit";
+        this.quitCommand = "QuitIsEntered";
 
         if (MenuContextAndProxy.GetInstance().GetLoggedInCustomer() != null) {
             optionsList.add("1: See wares");

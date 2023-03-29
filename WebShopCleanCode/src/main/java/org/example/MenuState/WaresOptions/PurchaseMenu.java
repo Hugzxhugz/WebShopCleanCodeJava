@@ -27,7 +27,7 @@ public class PurchaseMenu extends MenuStateFactory {
         this.currentMenu = "Purchase Menu";
         this.currentChoice = 1;
         this.commands = new HashMap<>();
-        this.quitCommand = "quit";
+        this.quitCommand = "QuitIsEntered";
         this.info = "What would you like to purchase.";
         this.optionsList = new ArrayList<>();
         for (int i = 0; i < productsList.size(); i++) {

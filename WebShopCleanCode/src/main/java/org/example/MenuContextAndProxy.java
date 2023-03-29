@@ -52,7 +52,7 @@ public class MenuContextAndProxy {
         return password;
     }
 
-    public ArrayList<Customer> getCustomerList() {
+    public ArrayList<Customer> GetCustomerList() {
         return customerList;
     }
 

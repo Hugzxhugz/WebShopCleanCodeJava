@@ -6,7 +6,7 @@ public class GetInputClass {
 
     Scanner scanner = new Scanner(System.in);
 
-    public int getAnInt(String message)
+    public int GetAnInt(String message)
     {
         int returnInt;
         while (true)
@@ -26,7 +26,7 @@ public class GetInputClass {
         return returnInt;
     }
 
-    public String getString(String message)
+    public String GetString(String message)
     {
         String returnString;
         while (true)
@@ -45,7 +45,7 @@ public class GetInputClass {
         return returnString;
     }
 
-    public boolean getYesNo(String message)
+    public boolean GetYesNo(String message)
     {
         while (true)
         {

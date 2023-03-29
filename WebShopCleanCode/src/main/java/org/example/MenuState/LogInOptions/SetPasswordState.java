@@ -16,7 +16,7 @@ public class SetPasswordState extends MenuStateFactory {
 
     public void DisplayMenu() {
         System.out.println("A keyboard appears.");
-        password = getInputClass.getString("Please input your password.");
+        password = getInputClass.GetString("Please input your password.");
 
         MenuContextAndProxy context = MenuContextAndProxy.GetInstance();
         context.SetPassword(password);

@@ -22,7 +22,7 @@ public class WaresMenuState extends MenuStateFactory {
         this.commands = new HashMap<>();
         this.optionsList = new ArrayList<>();
         this.info = "What would you like to do?";
-        this.quitCommand = "quit";
+        this.quitCommand = "QuitIsEntered";
 
         if (MenuContextAndProxy.GetInstance().GetLoggedInCustomer() != null) {
             optionsList.add("1: See all wares");

@@ -23,7 +23,7 @@ public class CustomerInfoState extends MenuStateFactory {
         optionsList.add("2: Set your info");
         optionsList.add("3: Add funds");
         amountOfOptions = optionsList.size();
-        this.quitCommand = "quit";
+        this.quitCommand = "QuitIsEntered";
         commands.put("1", new MoveToSeeOrdersCommand());
         commands.put("2", new MoveToSeeYourInfoCommand());
         commands.put("3", new MoveToAddFundsCommand());

@@ -24,7 +24,7 @@ public class LoginMenuState extends MenuStateFactory {
         optionsList.add("3: Login");
         optionsList.add("4: Register");
         amountOfOptions = optionsList.size();
-        this.quitCommand = "quit";
+        this.quitCommand = "QuitIsEntered";
         commands.put("1", new MoveToSetUsernameStateCommand());
         commands.put("2", new MoveToSetPasswordStateCommand());
         commands.put("3", new MoveToSetLoginStateCommand());

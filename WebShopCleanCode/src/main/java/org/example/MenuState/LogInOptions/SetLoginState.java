@@ -17,7 +17,7 @@ public class SetLoginState extends MenuStateFactory {
             System.out.println("\nIncomplete data.\n");
         }
         else {
-            for (Customer customer : MenuContextAndProxy.GetInstance().getCustomerList()) {
+            for (Customer customer : MenuContextAndProxy.GetInstance().GetCustomerList()) {
                 if (username.equals(customer.GetUsername()) && customer.CheckPassword(password)) {
                     System.out.println();
                     System.out.println(customer.GetUsername() + " logged in.");

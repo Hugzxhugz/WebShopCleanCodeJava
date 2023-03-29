@@ -16,7 +16,7 @@ public class SetUsernameState extends MenuStateFactory {
 
     public void DisplayMenu() {
         System.out.println("A keyboard appears.");
-        username = getInputClass.getString("Please input your username.");
+        username = getInputClass.GetString("Please input your username.");
 
         MenuContextAndProxy context = MenuContextAndProxy.GetInstance();
         context.SetUsername(username);

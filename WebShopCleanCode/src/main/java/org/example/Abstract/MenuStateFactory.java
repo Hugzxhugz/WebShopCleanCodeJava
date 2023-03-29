@@ -48,17 +48,17 @@ public abstract class MenuStateFactory implements IMenuState {
 
     protected void GetUserChoice(){
         commands = new HashMap<>();
-        commands.put("left", this::moveLeft);
-        commands.put("l", this::moveLeft);
-        commands.put("right", this::moveRight);
-        commands.put("r", this::moveRight);
-        commands.put("back", this::back);
-        commands.put("b", this::back);
-        commands.put("ok", this::ok);
-        commands.put("k", this::ok);
-        commands.put("o", this::ok);
-        commands.put("quit", this::quit);
-        commands.put("q", this::quit);
+        commands.put("left", this::MoveLeft);
+        commands.put("l", this::MoveLeft);
+        commands.put("right", this::MoveRight);
+        commands.put("r", this::MoveRight);
+        commands.put("Back", this::Back);
+        commands.put("b", this::Back);
+        commands.put("OkIsEntered", this::OkIsEntered);
+        commands.put("k", this::OkIsEntered);
+        commands.put("o", this::OkIsEntered);
+        commands.put("QuitIsEntered", this::QuitIsEntered);
+        commands.put("q", this::QuitIsEntered);
 
         setCursor(amountOfOptions,currentChoice);
         System.out.println("Your buttons are Left, Right, OK, Back and Quit.");
@@ -88,19 +88,19 @@ public abstract class MenuStateFactory implements IMenuState {
         System.out.println("|");
     }
 
-    public void moveLeft(){
+    public void MoveLeft(){
         if (currentChoice > 1) {
             currentChoice--;
         }
     }
 
-    public void moveRight(){
+    public void MoveRight(){
         if (currentChoice < amountOfOptions) {
             currentChoice++;
         }
     }
 
-    public void back(){
+    public void Back(){
         ICommand command;
         if (currentMenu.equals("Main Menu")) {
             System.out.println("\nYou're already on the main menu.\n");
@@ -115,11 +115,11 @@ public abstract class MenuStateFactory implements IMenuState {
         }
     }
 
-    public void ok(){
+    public void OkIsEntered(){
         ExecuteCommandIfExists(currentChoice);
     }
 
-    public void quit(){
+    public void QuitIsEntered(){
         System.out.println("The console powers down. You are free to leave.");
         System.exit(0);
     }

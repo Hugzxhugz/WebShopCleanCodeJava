@@ -54,7 +54,7 @@ public class SetRegisterState extends MenuStateFactory {
     }
 
     private String GetUserPassword() {
-        check = getInputClass.getYesNo("Do you want a password? y/n");
+        check = getInputClass.GetYesNo("Do you want a password? y/n");
         if (check){
             return password = builder.SetPassword();
         }
@@ -62,7 +62,7 @@ public class SetRegisterState extends MenuStateFactory {
     }
 
     private String GetFirstName() {
-        check = getInputClass.getYesNo("Do you want a first name? y/n");
+        check = getInputClass.GetYesNo("Do you want a first name? y/n");
         if (check){
             return firstName = builder.SetFirstName();
         }
@@ -70,7 +70,7 @@ public class SetRegisterState extends MenuStateFactory {
     }
 
     private String GetLastName() {
-        check = getInputClass.getYesNo("Do you want a last name? y/n");
+        check = getInputClass.GetYesNo("Do you want a last name? y/n");
         if (check){
             return lastName = builder.SetLastName();
         }
@@ -78,7 +78,7 @@ public class SetRegisterState extends MenuStateFactory {
     }
 
     private String GetEmail() {
-        check = getInputClass.getYesNo("Do you want an email? y/n");
+        check = getInputClass.GetYesNo("Do you want an email? y/n");
         if (check){
             return email = builder.SetEmail();
         }
@@ -86,7 +86,7 @@ public class SetRegisterState extends MenuStateFactory {
     }
 
     private int GetAge() {
-        check = getInputClass.getYesNo("Do you want an age? y/n");
+        check = getInputClass.GetYesNo("Do you want an age? y/n");
         if (check){
             return age = builder.SetAge();
         }
@@ -94,7 +94,7 @@ public class SetRegisterState extends MenuStateFactory {
     }
 
     private String GetAddress() {
-        check = getInputClass.getYesNo("Do you want an address? y/n");
+        check = getInputClass.GetYesNo("Do you want an address? y/n");
         if (check){
             return address = builder.SetAddress();
         }
@@ -102,7 +102,7 @@ public class SetRegisterState extends MenuStateFactory {
     }
 
     private String GetPhoneNumber() {
-        check = getInputClass.getYesNo("Do you want a phone number? y/n");
+        check = getInputClass.GetYesNo("Do you want a phone number? y/n");
         if (check){
             return phoneNumber = builder.SetPhoneNumber();
         }

@@ -52,12 +52,12 @@ public abstract class MenuStateFactory implements IMenuState {
         commands.put("l", this::MoveLeft);
         commands.put("right", this::MoveRight);
         commands.put("r", this::MoveRight);
-        commands.put("Back", this::Back);
+        commands.put("back", this::Back);
         commands.put("b", this::Back);
-        commands.put("OkIsEntered", this::OkIsEntered);
+        commands.put("ok", this::OkIsEntered);
         commands.put("k", this::OkIsEntered);
         commands.put("o", this::OkIsEntered);
-        commands.put("QuitIsEntered", this::QuitIsEntered);
+        commands.put("quit", this::QuitIsEntered);
         commands.put("q", this::QuitIsEntered);
 
         setCursor(amountOfOptions,currentChoice);
